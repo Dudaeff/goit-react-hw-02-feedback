@@ -1,10 +1,10 @@
-import { SectionTitle, Wrapper } from './Section.styled';
+import { SectionTitle, Layout } from './Section.styled';
 
 export const Section = ({ title, children }) => {
   return (
-    <Wrapper>
+    <Layout>
       {title && <SectionTitle>{title}</SectionTitle>}
       {children}
-    </Wrapper>
+    </Layout>
   );
 };
